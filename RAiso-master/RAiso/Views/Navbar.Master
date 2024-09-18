@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navbar.master.cs" Inherits="RAiso.Views.Navbar" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>RAiso</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="nav">
+            <div class="navMenus">
+                <asp:Button ID="homeBtn" runat="server" Text="Home" OnClick="homeBtn_Click" />
+                <asp:Button ID="cartBtn" runat="server" Text="Cart" Visible="false" OnClick="cartBtn_Click" />
+                <asp:Button ID="transactionBtn" runat="server" Text="Transaction" Visible="false" OnClick="transactionBtn_Click" />
+                <asp:Button ID="transactionReportBtn" runat="server" Text="Transaction Report" Visible="false" OnClick="transactionReportBtn_Click" />
+            </div>
+            <div class="navItems">
+                <asp:Button ID="loginBtn" runat="server" Text="Login" OnClick="loginBtn_Click" />
+                <asp:Button ID="registerBtn" runat="server" Text="Register" OnClick="registerBtn_Click" />
+                <asp:Button ID="updateProfileBtn" runat="server" Text="Update Profile" Visible="false" OnClick="updateProfileBtn_Click" />
+                <asp:Button ID="logoutBtn" runat="server" Text="Logout" Visible="false" OnClick="logoutBtn_Click" />
+            </div>
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
